@@ -385,6 +385,7 @@ def build_crosstab_chart(cross: CrossAnalysis) -> dict | None:
                     "formatter": f"Overall avg: {overall_mean:,.0f}",
                     "color": "#f5576c",
                     "fontSize": 11,
+                    "position": "insideStartTop",
                 },
                 "data": [{"yAxis": overall_mean}],
             },

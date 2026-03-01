@@ -43,6 +43,7 @@ class Insight:
     icon: str  # emoji
     text: str
     severity: str = "info"  # "info", "warning", "highlight"
+    category: str = "basic"  # "basic" or "narrative" (multi-column smart findings)
 
 
 @dataclass
@@ -735,6 +736,7 @@ def _find_underperformers(
             icon="🚩",
             text=text,
             severity="warning",
+            category="narrative",
         ))
         if mentioned is not None:
             mentioned.add(group)
@@ -775,6 +777,7 @@ def _find_top_performers(
                 icon="⭐",
                 text=text,
                 severity="highlight",
+                category="narrative",
             ))
             if mentioned is not None:
                 mentioned.add(group)
@@ -837,6 +840,7 @@ def _find_contradictions(
                     icon="⚡",
                     text=text,
                     severity="warning",
+                    category="narrative",
                 ))
                 if mentioned is not None:
                     mentioned.add(high_neg_group)
@@ -892,6 +896,7 @@ def _find_efficiency_insights(
         icon="💡",
         text=text,
         severity="highlight",
+        category="narrative",
     ))
 
 
