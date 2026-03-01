@@ -1,0 +1,14 @@
+{
+  "name": "csvglow",
+  "version": "0.1.0",
+  "description": "Generate beautiful HTML dashboards from CSV/Excel files",
+  "bin": {
+    "csvglow": "./bin/csvglow.js"
+  },
+  "keywords": ["csv", "dashboard", "visualization", "echarts", "excel", "mcp"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ratnaditya-j/csvglow"
+  }
+}
