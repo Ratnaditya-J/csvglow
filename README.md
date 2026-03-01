@@ -47,11 +47,21 @@ Output is a single self-contained HTML file. No server, no CDN, works offline.
 
 ## MCP Server
 
-csvglow works as an MCP tool in Claude Desktop, Cursor, Claude Code, Windsurf, or any MCP-compatible client.
+csvglow works as an MCP tool in Claude Desktop, Cursor, Claude Code, Windsurf, or any MCP-compatible client. Once configured, just ask your AI assistant:
 
-### Quick setup (pick one)
+> "Generate a dashboard from /path/to/sales.csv"
 
-**Option A — npx (easiest, no Python setup needed):**
+### Setup
+
+Pick your client and add csvglow to its MCP config file:
+
+| Client | Config file location |
+|--------|---------------------|
+| Claude Desktop | `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) |
+| Cursor | `.cursor/mcp.json` in your project root |
+| Windsurf | `~/.windsurf/mcp.json` |
+
+Open that file and add csvglow to the `mcpServers` section:
 
 ```json
 {
@@ -64,11 +74,9 @@ csvglow works as an MCP tool in Claude Desktop, Cursor, Claude Code, Windsurf, o
 }
 ```
 
-**Option B — pip install:**
+This uses npx so there's nothing to install — it downloads and runs automatically.
 
-```bash
-pip install csvglow
-```
+If you already have csvglow installed via pip, use this instead:
 
 ```json
 {
@@ -81,26 +89,15 @@ pip install csvglow
 }
 ```
 
-**Option C — Claude Code CLI:**
+**Claude Code** — run this in your terminal instead of editing a config file:
 
 ```bash
-claude mcp add csvglow -- csvglow --mcp
+claude mcp add csvglow -- npx -y csvglow --mcp
 ```
 
-### Where to put the config
+## OpenClaw Skill
 
-| Client | Config file |
-|--------|------------|
-| Claude Desktop | `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) |
-| Cursor | `.cursor/mcp.json` in your project or `~/.cursor/mcp.json` globally |
-| Claude Code | `~/.claude/settings.json` or run `claude mcp add` |
-| Windsurf | `~/.windsurf/mcp.json` |
-
-### What the MCP tool does
-
-Exposes a single `generate_dashboard` tool that takes a file path and returns a full HTML dashboard. Your AI assistant can call it like:
-
-> "Generate a dashboard from /path/to/sales.csv"
+csvglow is available as an [OpenClaw](https://openclaw.dev) skill. Any OpenClaw-compatible client can discover and use it automatically — no manual config needed.
 
 ## Supported formats
 
