@@ -110,11 +110,11 @@ Exposes a single `generate_dashboard` tool that takes a file path and returns a 
 
 ## Roadmap
 
-- [ ] Multi-sheet Excel support — analyze all sheets in a workbook, with per-tab sections or auto-merge when columns match
-- [ ] Multi-file support — `csvglow sales.csv marketing.csv --join date` to correlate data across multiple files with auto-detected or explicit join keys
-- [ ] Light theme
-- [ ] Custom color palettes
-- [ ] PDF export
+-  Multi-sheet Excel support — analyze all sheets in a workbook, with per-tab sections or auto-merge when columns match
+-  Multi-file support — `csvglow sales.csv marketing.csv --join date` to correlate data across multiple files with auto-detected or explicit join keys
+-  Light theme
+-  Custom color palettes
+-  PDF export
 
 ## License
 
