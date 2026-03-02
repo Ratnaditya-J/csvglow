@@ -11,3 +11,6 @@ venv/
 node_modules/
 *.html
 !src/csvglow/templates/**
+.claude/
+.mcp.json
+skill/
