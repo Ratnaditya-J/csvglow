@@ -8,6 +8,8 @@ csvglow sales.csv
 
 Opens a self-contained HTML dashboard in your browser with auto-detected charts, smart multi-column insights, correlations, and a sortable data table. Dark gradient theme. Copy any chart to your clipboard.
 
+[![CSVGlow MCP server](https://glama.ai/mcp/servers/Ratnaditya-J/csvglow/badges/card.svg)](https://glama.ai/mcp/servers/Ratnaditya-J/csvglow)
+
 ## Install
 
 ```bash
