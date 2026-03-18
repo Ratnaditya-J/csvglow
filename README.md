@@ -1,5 +1,7 @@
 # csvglow
 
+[![csvglow MCP server](https://glama.ai/mcp/servers/Ratnaditya-J/csvglow/badges/card.svg)](https://glama.ai/mcp/servers/Ratnaditya-J/csvglow)
+
 Generate beautiful, interactive HTML dashboards from CSV/Excel files. One command, zero config.
 
 ```bash
