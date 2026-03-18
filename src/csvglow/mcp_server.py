@@ -43,5 +43,10 @@ def generate_dashboard(
     }
 
 
-if __name__ == "__main__":
+def main():
+    """Entry point for the csvglow-mcp CLI command."""
     mcp.run(transport="stdio")
+
+
+if __name__ == "__main__":
+    main()

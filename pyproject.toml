@@ -22,6 +22,7 @@ dev = ["pytest>=7.0", "ruff"]
 
 [project.scripts]
 csvglow = "csvglow.cli:main"
+csvglow-mcp = "csvglow.mcp_server:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -7,4 +7,4 @@ COPY src/ src/
 
 RUN pip install --no-cache-dir .
 
-ENTRYPOINT ["python", "-c", "from csvglow.mcp_server import mcp; mcp.run(transport='stdio')"]
+ENTRYPOINT ["csvglow-mcp"]
